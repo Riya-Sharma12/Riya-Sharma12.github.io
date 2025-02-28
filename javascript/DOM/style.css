@@ -1,0 +1,57 @@
+#parent {
+    display: block;
+    max-width: 35%;
+    margin: 20px auto; /* Centers the div */
+    padding: 10px;
+}
+
+#parent div {
+    background-color: aquamarine;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 5px; /* Reduced padding */
+    min-height: 18px; /* Decreased height */
+    display: block;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    margin-bottom: 4px; /* Reduced spacing between divs */
+    word-wrap: break-word; /* Prevents overflow */
+    font-size: 14px; /* Ensures text remains readable */
+    line-height: 1; /* Reduces extra vertical space */
+}
+
+#parent div:hover {
+    transform: translateY(-2px);
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+#btn {
+    display: block;
+    margin: 8px auto;
+    padding: 5px 10px; /* Slightly smaller button */
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+    font-size: 12px; /* Slightly smaller font */
+}
+
+#btn:hover {
+    background-color: darkgray;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    #parent {
+        max-width: 80%;
+    }
+    
+    #parent div {
+        padding: 4px;
+        min-height: 15px; /* Even smaller height on small screens */
+        font-size: 12px;
+    }
+}

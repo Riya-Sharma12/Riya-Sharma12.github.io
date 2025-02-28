@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../.."
+		},
+		{
+			"path": "../../../NamasteJS"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Prime"
+	}
+}
